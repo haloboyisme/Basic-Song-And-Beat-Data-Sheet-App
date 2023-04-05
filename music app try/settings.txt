@@ -1,0 +1,3 @@
+C:/Users/SR116/source/repos/music app try/music app try/SettingPage
+C:/Users/SR116/source/repos/music app try/music app try/SettingPage/songlist.db
+C:/Users/SR116/source/repos/music app try/music app try/SettingPage/BeatList.db

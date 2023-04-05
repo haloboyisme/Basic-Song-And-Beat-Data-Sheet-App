@@ -1,0 +1,47 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b315c3ac-0143-4a12-9ea1-85c2a0e58bed</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>music_app_try.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>music app try</Name>
+    <RootNamespace>music app try</RootNamespace>
+    <TestFramework>Pytest</TestFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AddBeatPage\AddBeatPage.py" />
+    <Compile Include="AddPage\AddSongPage.py" />
+    <Compile Include="music_app_try.py" />
+    <Compile Include="SettingPage\SettingPage.py" />
+    <Compile Include="SongInfoSheet.py" />
+    <Compile Include="TestFiles\testfillscript.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AddPage\" />
+    <Folder Include="AddBeatPage\" />
+    <Folder Include="TestFiles\" />
+    <Folder Include="SettingPage\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
